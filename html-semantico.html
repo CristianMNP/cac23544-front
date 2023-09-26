@@ -1,0 +1,92 @@
+<html lang="es">
+<!-- Lo ve el browser -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sem&aacute;ntico</title>
+    <!-- Para que en la página la palabra aparezca con acento (Sem&aacute;ntico) -->
+    
+    <!-- 2da forma -->
+    <style>
+        /* Comentario en css */
+        /* Modifica el html */
+        /* Primer regla para la etiqueta <a> */
+
+        /* Selector de etiqueta */
+        a {
+            color: green;
+        }
+    </style>
+
+    <!-- 3ra forma de agregar estilos: externa -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 1er forma -->
+    <header style="border: 1px solid black; text-align: center;">
+        <h1 style="color: aqua;">Partidos de primera</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./tablas.html">Tablas</a>
+            </li>
+            <li>
+                <a href="./alumno.html">Link3</a>
+            </li>
+            <!-- Se puede hacer así támbien sin los <li> 
+            <a href="./index.html">Home</a>
+            <a href="./tablas.html">Tablas</a>
+            <a href="./alumno.html">Link3</a> -->
+        </ul>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h3 id="eq">Equipos</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nihil tempora sequi quae consectetur aperiam voluptates eum assumenda quam libero error dolor at laudantium beatae, veniam necessitatibus ut deleniti ipsa?</p>
+        </section>
+    </main>
+
+    <!-- Publicidad -->
+    <aside>
+        <h3>Venta de autos</h3>
+        <img src="./">
+    </aside>
+
+    <!-- Información independiente. Ej: mensaje de foro -->
+    <article>
+        <p class="textoVerde">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    </article>
+
+    <!-- Cierre, pie de página -->
+    <hr>
+    <footer>
+        <h5 class="textoVerde">Contacto</h5>
+        <form action="contacto.html">
+            <label>Mensaje</label>
+            <textarea>
+
+            </textarea>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+        <h5>Mapa de sitio</h5>
+        <ul>
+            <li>
+                Home
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
